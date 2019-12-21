@@ -13,7 +13,7 @@ public class MailAttachment {
         ClassPathXmlApplicationContext app = new ClassPathXmlApplicationContext("spring.xml");
         JavaMailSenderImpl javaMailSender = (JavaMailSenderImpl) app.getBean("javaMailSenderImpl");
 
-        MailTemp test = new MailTemp("447420902@qq.com", "1757322402@qq.com", "test", "我又来了，附件收到了么？");
+        MailTemp test = new MailTemp("发送者邮件地址", "接收者邮箱地址", "标题", "内容");
         //发送普通文本类型的邮件
         MimeMessage mimeMessage = javaMailSender.createMimeMessage();
         //指定附件
