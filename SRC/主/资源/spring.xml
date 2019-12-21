@@ -10,7 +10,7 @@
 
     <bean id="javaMailSenderImpl" class="org.springframework.mail.javamail.JavaMailSenderImpl">
             <property name="host" value="smtp.qq.com"></property>
-            <property name="username" value="447420902@qq.com"></property>
+            <property name="username" value="发送端邮箱地址"></property>
             <!--需要进入qq邮箱后，设置,账户  开启smtp客户端配置服务(第一个选项)-->
         <!--授权码-->
             <property name="password" value="foivsafxdjrwbghf"></property>
