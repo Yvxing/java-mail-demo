@@ -9,7 +9,7 @@ public class MailDemo {
         ClassPathXmlApplicationContext appc =  new ClassPathXmlApplicationContext("spring.xml");
         JavaMailSenderImpl javaMailSenderImpl = (JavaMailSenderImpl) appc.getBean("javaMailSenderImpl");
 
-        MailTemp test = new MailTemp("447420902@qq.com", "1757322402@qq.com", "test", "收到了么？");
+        MailTemp test = new MailTemp("发送邮箱地址", "接收者邮箱", "标题", "内容");
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
         simpleMailMessage.setFrom(test.getFrom());
         simpleMailMessage.setTo(test.getTo());
